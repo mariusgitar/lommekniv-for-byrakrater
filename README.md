@@ -41,6 +41,8 @@ Hvis GitHub Actions ikke starter som forventet etter en endring, kan en ny commi
 - `styles.css` – all visuell stil og responsiv layout
 - `README.md` – kort dokumentasjon og sjekkliste
 
+> Sist oppdatert: liten dokumentasjonsendring for å trigge ny CI/Actions-kjøring.
+
 ## Manuell testliste
 
 - [ ] Siden laster lokalt i nettleser (åpne `index.html`).
