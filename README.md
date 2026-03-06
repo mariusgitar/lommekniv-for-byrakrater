@@ -31,6 +31,10 @@ Bytt `BRUKERNAVN` med faktisk GitHub-brukernavn.
 4. Velg branch (typisk `main`) og mappe (`/root`).
 5. Lagre. GitHub publiserer siden automatisk.
 
+## Feilsøking ved publisering
+
+Hvis GitHub Actions ikke starter som forventet etter en endring, kan en ny commit og push ofte trigge kjøringen på nytt. Sjekk også at Actions er aktivert i repo-innstillingene.
+
 ## Viktige filer
 
 - `index.html` – innhold og struktur for portalen
