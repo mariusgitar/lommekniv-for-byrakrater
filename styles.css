@@ -1,10 +1,10 @@
 :root {
   --color-primary: #013952;
   --color-background: #f6f7f8;
-  --color-surface: #ffffff;
+  --color-surface: rgba(255, 255, 255, 0.9);
   --color-border: #d9e0e5;
   --color-text: #102a3a;
-  --color-muted: #4d6372;
+  --color-muted: #2f4a58;
   --space-1: 8px;
   --space-2: 16px;
   --space-3: 24px;
@@ -21,7 +21,13 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-  background: var(--color-background);
+  background:
+    radial-gradient(circle at 16% 22%, rgba(118, 179, 166, 0.33) 0 18%, transparent 19%),
+    radial-gradient(circle at 83% 36%, rgba(137, 193, 204, 0.28) 0 15%, transparent 16%),
+    radial-gradient(circle at 24% 82%, rgba(159, 204, 145, 0.25) 0 19%, transparent 20%),
+    linear-gradient(135deg, rgba(173, 205, 185, 0.48), rgba(183, 211, 224, 0.44) 45%, rgba(236, 244, 239, 0.8)),
+    var(--color-background);
+  background-attachment: fixed;
   color: var(--color-text);
   line-height: 1.5;
 }
@@ -90,6 +96,7 @@ main {
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   background: var(--color-surface);
+  backdrop-filter: blur(2px);
 }
 
 .tool-card p {
@@ -122,6 +129,7 @@ main {
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   background: var(--color-surface);
+  backdrop-filter: blur(2px);
 }
 
 .footnote h2 {
@@ -133,6 +141,15 @@ main {
   color: var(--color-muted);
 }
 
+.feedback-line {
+  margin-top: var(--space-2);
+  font-weight: 600;
+}
+
+.feedback-line a {
+  color: var(--color-primary);
+}
+
 @media (max-width: 640px) {
   .hero {
     padding-top: var(--space-4);
@@ -140,5 +157,9 @@ main {
 
   .tool-card {
     padding: var(--space-2);
+  }
+
+  body {
+    background-attachment: scroll;
   }
 }
