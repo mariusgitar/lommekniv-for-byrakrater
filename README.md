@@ -6,11 +6,13 @@ Portalen inneholder ikke selve verktøyene. Den fungerer som en ryddig startside
 
 ## Hva prosjektet inneholder
 
-- En rolig og responsiv forside med tre verktøykort
+- En rolig og responsiv forside med fem verktøykort
 - Klare lenker videre til:
   - PDF-sammenslåer
   - QR-kodefabrikk
   - PII-scrubber
+  - Bildebasen
+  - Bakgrunnsviskeren
 - En liten bunnseksjon som sier at flere verktøy kommer
 
 ## Endre lenker til verktøyene
@@ -47,7 +49,7 @@ Hvis GitHub Actions ikke starter som forventet etter en endring, kan en ny commi
 
 - [ ] Siden laster lokalt i nettleser (åpne `index.html`).
 - [ ] Tittel og intro vises riktig.
-- [ ] Alle tre verktøykort vises med navn, beskrivelse og knappelenke.
+- [ ] Alle fem verktøykort vises med navn, beskrivelse og knappelenke.
 - [ ] Lenkene peker til riktige plassholder-URL-er.
 - [ ] Layout fungerer på smal skjermbredde.
 - [ ] Hover- og fokus-state er tydelig på lenkene.
